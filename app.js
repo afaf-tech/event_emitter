@@ -25,7 +25,12 @@ console.timeEnd('how long?');
 
 // redis
 var redis = require("redis");
-var client = redis.createClient();
+// var client = redis.createClient();
+const client = redis.createClient({
+    host: '173.82.243.249',
+    port: 6379,
+    password: 'afaf-tech'
+});
 
 client.on("connect", function() {
   console.log("You are now connected");
