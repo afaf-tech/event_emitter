@@ -1,0 +1,1 @@
+This is just a sample script of how to use jsdoc
